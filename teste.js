@@ -7,3 +7,13 @@ numeros.forEach(numeros => {
 });
 
 console.log(soma)
+
+let nomes = ['andre', 'luiz', 'ana', 'joão']
+
+let nomesAtualizados = nomes.map(nome => nome.toUpperCase())
+
+console.log(nomesAtualizados)
+
+novosNomes = nomesAtualizados.map(nom => nom.toLowerCase())
+
+console.log(novosNomes)

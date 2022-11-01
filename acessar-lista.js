@@ -9,4 +9,8 @@ const chaves = ["nome", "idade", "cpf", "email"]
 
 //console.log(cliente[chaves[0]])
 
+//delete cliente.cpf
+
+//const deletar = delete cliente["cpf"]
+
 chaves.forEach(info => console.log(cliente[info]))

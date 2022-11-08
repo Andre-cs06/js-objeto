@@ -20,6 +20,12 @@ cliente.dependentes.push({
 
 //console.log(cliente)
 
-const filhaMaisNova = cliente.dependentes.filter( dependentes => dependentes.dataNasc==='04/01/2014')
+const filhaMaisNova = cliente.dependentes.filter( dependentes => dependentes.dataNasc === '04/01/2014')
 
 console.log(filhaMaisNova[0].nome)
+
+//cliente.fones.push('123456789')
+
+//for(i = 0; i < cliente.fones.length; i++) {
+//     console.log(`qual numero você deseja discar? ${cliente.fones[i]}`)
+// }

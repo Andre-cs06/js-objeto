@@ -1,4 +1,4 @@
-function cliente(nome, cpf, email, saldo){
+function Cliente(nome, cpf, email, saldo){
     this.nome = nome
     this.cpf = cpf
     this.email = email
@@ -8,6 +8,6 @@ function cliente(nome, cpf, email, saldo){
     }
 }
 
-const andre = new cliente('André', '12365478989', 'andre@email.com',200)
+const andre = new Cliente('André', '12365478989', 'andre@email.com',200)
 
 console.log(andre)

@@ -1,4 +1,4 @@
-function cliente(nome, cpf, email, numero, saldo) {
+function Cliente(nome, cpf, email, numero, saldo) {
     this.nome = nome
     this.cpf = cpf
     this.email = email
@@ -9,17 +9,17 @@ function cliente(nome, cpf, email, numero, saldo) {
     }
 }
 
- const andre = new cliente("andre", "12365478998", "andre@emial.com", "999999999", 100)
+ const andre = new Cliente("andre", "12365478998", "andre@emial.com", "999999999", 100)
  andre.depositar(500)
 
-function contaPoup(nome, cpf, email, numero, saldo, saldoPoup) {
-    cliente.call(this, nome, cpf, email, numero,saldo,)
+function ContaPoup(nome, cpf, email, numero, saldo, saldoPoup) {
+    Cliente.call(this, nome, cpf, email, numero,saldo,)
     this.saldoPoup = saldoPoup
 }
 
-const joao = new contaPoup("joao", "12365478998", "joao@emial.com", "999999999", 125, 250)
+const joao = new ContaPoup("joao", "12365478998", "joao@emial.com", "999999999", 125, 250)
 
-contaPoup.prototype.depositoPoup = function(deposito){
+ContaPoup.prototype.depositoPoup = function(deposito){
     this.saldoPoup += deposito
 }
 
@@ -27,4 +27,4 @@ joao.depositoPoup(500)
 
 // console.log(joao)
 // console.log(andre)
-console.log(cliente.constructor === Function)
+//console.log(cliente.constructor === Function)

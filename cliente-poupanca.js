@@ -1,4 +1,4 @@
-function cliente(nome, cpf, email, saldo){
+function Cliente(nome, cpf, email, saldo){
     this.nome = nome
     this.cpf = cpf
     this.email = email
@@ -8,16 +8,16 @@ function cliente(nome, cpf, email, saldo){
     }
 }
 
-function clientePoupanca(nome, cpf, email, saldo, saldoPoup){
-    cliente.call(this, nome, cpf, email, saldo,)
+function ClientePoupanca(nome, cpf, email, saldo, saldoPoup){
+    Cliente.call(this, nome, cpf, email, saldo,)
     this.saldoPoup = saldoPoup
 }
 
-const joao = new clientePoupanca('Joao', '12365478923', 'joao@email.com', 300, 500)
+const joao = new ClientePoupanca('Joao', '12365478923', 'joao@email.com', 300, 500)
 
 //console.log(joao)
 
-clientePoupanca.prototype.depositoPoup = function(valor){
+ClientePoupanca.prototype.depositoPoup = function(valor){
     this.saldoPoup += valor
 }
 

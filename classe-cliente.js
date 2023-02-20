@@ -15,4 +15,6 @@ class Cliente{
 
 const andre = new Cliente('André', 'andre@email.com', '12365478998', 225)
 
+const carlos = new Cliente('Calos', 'carlos@email.com','12365478912',500)
+
 console.log(andre)
